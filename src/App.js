@@ -14,9 +14,6 @@ function App() {
         <header className="App-header">
           <Navbar/>
         </header>
-
-        <img class='glboal-background' src='img/back1.jpg'/>
-
         <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path="/portfolio" element={<Portfolio/>}/>
