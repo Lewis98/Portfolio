@@ -23,6 +23,7 @@ export default class pgHome extends Component {
 
             <h1 style={txtStyle}>Lewis Stokes</h1>
             <h2 style={txtStyle}>Software Developer</h2>
+            <h3 style={txtStyle}>Please note this site is currently incomplete, and is under development.<br/>This is due to changes in underlying technologies and hosting provider.</h3>
 
         </div>
       </>
