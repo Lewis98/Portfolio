@@ -1,13 +1,17 @@
 import React, { Component } from 'react'
 
 const overlayStyle = {
-    width: '70%',
+    /*width: '70%',
     height: '30%',
-    margin: '0 auto',
-    background: 'rgba(0, 0, 0, .6)',
-    borderRadius: '10px',
-    padding: '30px',
-    marginTop: '10vh',
+    margin: '0 auto',*/
+    //background: 'rgba(0, 0, 0, .6)',
+    margin: '0%',
+    border: '0%',
+    background: 'linear-gradient(0deg, rgba(255,255,255,0) 1%, #141517 100%)',
+    fontStyle: 'italic',
+   // borderRadius: '10px',
+    padding: '5vh',
+    //marginTop: '10vh',
     textAlign: 'center'
 }
 
@@ -23,7 +27,6 @@ export default class pgHome extends Component {
 
             <h1 style={txtStyle}>Lewis Stokes</h1>
             <h2 style={txtStyle}>Software Developer</h2>
-            <h3 style={txtStyle}>Please note this site is currently incomplete, and is under development.<br/>This is due to changes in underlying technologies and hosting provider.</h3>
 
         </div>
       </>

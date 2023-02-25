@@ -15,7 +15,7 @@ const MenuStyle = {
 export default class Navbar extends Component {
   render() {
     return (
-        <>
+        <div style={{margin: '0'}}>
             <Menu style={MenuStyle} theme="dark" mode="horizontal">
               <Menu.Item key="1"><Link to="/">Home</Link></Menu.Item>
               <Menu.Item key="2"><Link to="/portfolio">Portfolio</Link></Menu.Item>
@@ -24,7 +24,7 @@ export default class Navbar extends Component {
               <Menu.Item key="5"><Link to="/contact">Contact</Link></Menu.Item>
             </Menu> 
             
-        </>
+        </div>
     )
   }
 }

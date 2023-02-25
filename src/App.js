@@ -1,34 +1,36 @@
 import './App.css';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter} from "react-router-dom";
 
 import Navbar from './components/NavBar';
 
-import Home from './components/pgHome';
-import Portfolio from './components/pgPortfolio';
-import Resume from './components/pgResume';
-import About from './components/pgAbout';
-import Contact from './components/pgContact';
+import Router from './Router';
 
-import NotFound from './components/pgNotFound';
 
 
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
-        <header className="App-header">
-          <Navbar/>
-        </header>
-        <Routes>
-          <Route path="/" element={<Home/>}/>
-          <Route path="/portfolio" element={<Portfolio/>}/>
-          <Route path="/resume" element={<Resume/>}/>
-          <Route path="/about" element={<About/>}/>
-          <Route path="/contact" element={<Contact/>}/>
+      
 
-          <Route path="*" element={<NotFound/>}/>
-        </Routes>
-      </BrowserRouter>
+      <ul className="slideshow">
+        <li><span>Image 01</span></li>
+        <li><span>Image 02</span></li>
+        <li><span>Image 03</span></li>
+        <li><span>Image 04</span></li>
+        <li><span>Image 05</span></li>
+        <li><span>Image 06</span></li>
+      </ul>
+
+
+      <div className="container">
+        <BrowserRouter>
+          <header className="App-header">
+            <Navbar/>
+          </header>
+          <Router/>
+        </BrowserRouter>
+      </div>
+      
     </div>
   );
 }

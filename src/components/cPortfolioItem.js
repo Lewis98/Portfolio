@@ -1,23 +1,37 @@
 import React, { Component } from 'react';
+import { Link } from "react-router-dom";
 
 import { Card } from 'antd';
 import { GoMarkGithub } from "react-icons/go";
 
 const { Meta } = Card;
 
-const cardStyle = {
-    maxWidth : '40vw',
+const contStyle ={
+  width: '20vw',
 
+  minWidth: '200px',
+  paddingTop: '5vh',
+
+  margin: 'auto',
+
+  color: 'black',
+  textDecoration: 'none'
+}
+
+const cardStyle = {
 }
 
 const imageStyle = {
-    height : '40vh'
+  height: '20vh',
+  width:'100%'
 }
 
 export default class ItemCard extends Component {
+
   render() {
     return (
-        <Card style={cardStyle}
+      <Link to={this.props.gitLink} style={contStyle}>
+        <Card style={cardStyle} hoverable
         cover={
           <img style = {imageStyle}
             alt="Project image"
@@ -36,6 +50,7 @@ export default class ItemCard extends Component {
 
         />
       </Card>
+      </Link>
     )
   }
 }
