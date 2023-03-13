@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Carousel, Col, Row  } from 'antd';
-import { LeftCircleFilled, RightCircleFilled } from '@ant-design/icons'
+import { LeftOutlined, RightOutlined } from '@ant-design/icons'
 
 import ItemCard from './cPortfolioItem';
 
@@ -18,15 +18,32 @@ const itemNavContainerStyle = {
 }
 
 const arrowStyle = {
-  color: '#001529',
-  backgroundColor: '#a6adb4',
-  borderRadius: '100%',
-  fontSize: '5em',
-  boxShadow: '3px 5px 8px black',
+  color: '#a6adb4',
+  backgroundColor: '#001529',
+  borderRadius: '50%',
+  padding: '.25em',
+  fontSize: '4em',
+  boxShadow: '5px 5px 8px black',
   
   "&:hover": {
     backgroundColor: "white"
   },
+}
+
+const arrowStyleRight = {
+
+  color: '#a6adb4',
+  backgroundColor: '#001529',
+  borderRadius: '50%',
+  padding: '.25em',
+  fontSize: '4em',
+  boxShadow: '5px 5px 8px black',
+  
+  "&:hover": {
+    backgroundColor: "white"
+  },
+
+  boxShadow: '-5px 5px 8px black',
 }
 
 export default class Portfolio extends Component {
@@ -88,8 +105,8 @@ export default class Portfolio extends Component {
           />     
         </Carousel>
         <div style={itemNavContainerStyle}>
-          <LeftCircleFilled style={arrowStyle} onClick={this.previous} />
-          <RightCircleFilled style={arrowStyle} onClick={this.next} /> 
+          <LeftOutlined style={arrowStyle} onClick={this.previous} />
+          <RightOutlined style={arrowStyleRight} onClick={this.next} /> 
         </div>    
       </>
     )
