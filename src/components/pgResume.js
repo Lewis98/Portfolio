@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import PDFResume from './Helpers/pdfResume'
 
 import { Button } from 'antd';
 import { DownloadOutlined } from '@ant-design/icons';
@@ -36,12 +35,6 @@ export default class Resume extends Component {
           Download
         </Button>
         </a>
-      </div>
-    )
-
-    return (
-      <div style={PDFViewStyle}>
-        <PDFResume/>  
       </div>
     )
   }
