@@ -28,9 +28,9 @@ export default class Resume extends Component {
 
     return (
       <div>
-        <iframe style={iframeStyle} src='/CV.pdf'/>
+        <iframe style={iframeStyle} src='/CV - Lewis Stokes 23.02.15.pdf'/>
         <br/>
-        <a href='/CV.pdf' download>
+        <a href='/CV - Lewis Stokes 23.02.15.pdf' download>
         <Button type="primary" shape="round" style={btnStyle} icon={<DownloadOutlined />}>
           Download
         </Button>
