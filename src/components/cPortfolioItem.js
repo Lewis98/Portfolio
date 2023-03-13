@@ -6,19 +6,18 @@ import { GoMarkGithub } from "react-icons/go";
 
 const { Meta } = Card;
 
-const contStyle ={
-  width: '20vw',
 
-  minWidth: '200px',
-  paddingTop: '5vh',
-
-  margin: 'auto',
-
-  color: 'black',
-  textDecoration: 'none'
+const contStyle = {
+  height: '60vh'
 }
 
 const cardStyle = {
+  maxWidth: '50%',
+  width: '300px',
+  //height: '40vh',
+  
+  margin: 'auto',
+  marginTop: '10vh',
 }
 
 const imageStyle = {
@@ -29,28 +28,29 @@ const imageStyle = {
 export default class ItemCard extends Component {
 
   render() {
+    //<Link to={this.props.gitLink} style={contStyle}>
     return (
-      <Link to={this.props.gitLink} style={contStyle}>
-        <Card style={cardStyle} hoverable
-        cover={
-          <img style = {imageStyle}
-            alt="Project image"
-            src={this.props.image}
-          />
-        }
-        actions={[
-            <a href={this.props.gitLink}>
-                <GoMarkGithub size={16} />
-            </a>,
-        ]}
-      >
-        <Meta
-          title={this.props.title}
-          description={this.props.description}
+      <div style={contStyle}>
+          <Card style={cardStyle} hoverable
+          cover={
+            <img style = {imageStyle}
+              alt="Project image"
+              src={this.props.image}
+            />
+          }
+          actions={[
+              <a href={this.props.gitLink}>
+                  <GoMarkGithub size={16} />
+              </a>,
+          ]}
+        >
+          <Meta
+            title={this.props.title}
+            description={this.props.description}
 
-        />
-      </Card>
-      </Link>
+          />
+        </Card>
+      </div>
     )
   }
 }
