@@ -76,6 +76,14 @@ export default class Portfolio extends Component {
     return (
       <>
         <Carousel style={carouselStyle} ref={node => (this.carousel = node)} {...props}>
+
+          <ItemCard 
+            image="/img/projects/CovidAI.jpg"
+            title="AI Detection of Covid-19"
+            description="Using Logistic Regression and Support Vector Classification machine learning models to detect Covid-19."
+            gitLink="https://github.com/Lewis98/Covid_AI"
+          />
+
           <ItemCard 
             image="/img/projects/MLP.jpg"
             title="Multi Layer Perceptron"
