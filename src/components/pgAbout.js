@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 
+import PgTrans from './Helpers/pageTransition';
+
 
 const titleStyle = {
     color: 'white',
@@ -28,7 +30,8 @@ const containerStyle = {
 export default class About extends Component {
   render() {
     return (
-        <div style={containerStyle}>
+        <PgTrans>
+          <div style={containerStyle}>
             <h1 style={titleStyle}>About Me</h1>
 
             <p style={txtStyle}>
@@ -55,8 +58,9 @@ export default class About extends Component {
               believe flying is a great aid in keeping my mind active, as well
               as great practice at multitasking and mental preparedness. 
             </p>
-            
-        </div>
+          
+          </div>            
+        </PgTrans>
     )
   }
 }

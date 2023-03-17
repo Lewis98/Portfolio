@@ -1,8 +1,12 @@
 import React, { Component } from 'react'
 import emailjs from '@emailjs/browser'
 
+import PgTrans from './Helpers/pageTransition';
+
 import { Form, Input, Button } from 'antd'
 const { TextArea } = Input;
+
+
 
 
 /**
@@ -82,6 +86,7 @@ export default class Contact extends Component {
 
     render() {
         return (
+            <PgTrans>
             <div style={containerStyle}>
             <Form style={formStyle}
                 onFinish={this.onFinish}
@@ -127,6 +132,7 @@ export default class Contact extends Component {
                 </Form.Item>
             </Form>
             </div>
+            </PgTrans>
         )
     }
 }

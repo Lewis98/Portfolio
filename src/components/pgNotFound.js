@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 
+import PgTrans from './Helpers/pageTransition';
+
 
 const overlayStyle = {
     width: '70%',
@@ -19,12 +21,14 @@ const txtStyle = {
 export default class NotFound extends Component {
   render() {
     return (
+      <PgTrans>
         <div style={overlayStyle}>
 
             <h1 style={txtStyle}>Error: 404 - Not Found</h1>
             <h3 style={txtStyle}>The page you're trying to access doesn't seem to exist.</h3>
 
-        </div>  
+        </div>
+      </PgTrans> 
     )
   }
 }

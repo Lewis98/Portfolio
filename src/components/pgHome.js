@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 
+import PgTrans from './Helpers/pageTransition';
+
 const overlayStyle = {
     /*width: '70%',
     height: '30%',
@@ -22,14 +24,14 @@ const txtStyle = {
 export default class pgHome extends Component {
   render() {
     return (
-      <>
+      <PgTrans>
         <div style={overlayStyle}>
 
             <h1 style={txtStyle}>Lewis Stokes</h1>
             <h2 style={txtStyle}>Software Developer</h2>
 
         </div>
-      </>
+      </PgTrans>
     )
   }
 }

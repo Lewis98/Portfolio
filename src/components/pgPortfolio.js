@@ -4,6 +4,8 @@ import { LeftOutlined, RightOutlined } from '@ant-design/icons'
 
 import ItemCard from './cPortfolioItem';
 
+import PgTrans from './Helpers/pageTransition';
+
 const carouselStyle = {
   margin: '0',
   padding: '0',
@@ -74,7 +76,7 @@ export default class Portfolio extends Component {
     };
 
     return (
-      <>
+      <PgTrans>
         <Carousel style={carouselStyle} ref={node => (this.carousel = node)} {...props}>
 
           <ItemCard 
@@ -116,7 +118,7 @@ export default class Portfolio extends Component {
           <LeftOutlined style={arrowStyle} onClick={this.previous} />
           <RightOutlined style={arrowStyleRight} onClick={this.next} /> 
         </div>    
-      </>
+      </PgTrans>
     )
   }
 }
