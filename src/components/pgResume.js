@@ -8,8 +8,8 @@ import PgTrans from './Helpers/pageTransition';
 const iframeStyle = {
   border: 'none',
   marginTop: '3vh',
-  width: '60%',
-  height: '60vh',
+  width: '65%',
+  height: '80vh',
 }
 
 const btnStyle = {
@@ -30,7 +30,7 @@ export default class Resume extends Component {
 
     return (
       <PgTrans>
-        <iframe style={iframeStyle} src='/CV - Lewis Stokes 23.02.15.pdf'/>
+        <iframe style={iframeStyle} src='/CV - Lewis Stokes.pdf'/>
         <br/>
         <a href='/CV - Lewis Stokes 23.02.15.pdf' download>
         <Button type="primary" shape="round" style={btnStyle} icon={<DownloadOutlined />}>
