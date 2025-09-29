@@ -1,140 +1,36 @@
-<a name="readme-top"></a>
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-
-<!-- PROJECT LOGO -->
-<br />
-<div align="center">
-  <a href="https://github.com/Lewis98/Portfolio">
-    <img src="public/favicon.ico" alt="Logo" width="80" height="80">
-  </a>
-
-<h3 align="center">Portfolio Website</h3>
-
-  <p align="center">
-    Website portfolio built using React and hosted using <a href="https://render.com/">Render</a>.<br/>
-    Can be accessed at https://lewis-stokes.onrender.com/
-    <br />
-  </p>
-</div>
-
-
-
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <!--<li><a href="#acknowledgments">Acknowledgments</a></li>-->
-  </ol>
-</details>
-
-
-
-## About The Project
-
-Basic portfolio website for congregating and displaying hobby projects. <br/>
-The website also serves as a playground and showcase for personal front end web development. </br>
-Replacement for old PHP based portfolio site (found [here](https://github.com/Lewis98/Portfolio-Website)).
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-### Built With
-
-* [React JS](https://reactjs.org/)
-* [Ant Design](https://ant.design/)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- GETTING STARTED -->
 ## Getting Started
 
-To get a local copy up and running follow these simple example steps.
+First, run the development server:
 
-### Prerequisites
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-### Installation
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-1. Clone the repo
-   ```sh
-   git clone https://github.com/Lewis98/Portfolio.git
-   ```
-3. Install NPM dependencies
-   ```sh
-   npm install
-   ```
-4. Start the development server
-   ```js
-   npm run start
-   ```
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+## Learn More
 
+To learn more about Next.js, take a look at the following resources:
 
-<!-- ROADMAP -->
-## Roadmap
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-- ~~Projects Page~~
-- ~~Resume Page~~
-- ~~About Page~~
-- Contact Us Page
-- Page transitions
-- Projects page list view option
-- Blog / Articles page
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-See the [open issues](https://github.com/Lewis98/Portfolio/issues) for a full list of proposed features (and known issues).
+## Deploy on Vercel
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-
-<!-- CONTACT -->
-## Contact
-
-Lewis Stokes - Lewis.Stokes98@gmail.com
-
-Project Link: [https://github.com/Lewis98/Portfolio](https://github.com/Lewis98/Portfolio)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
-
-### Images
-Images sourced from [Unsplash](https://unsplash.com/)
-* <a href="https://unsplash.com/photos/ryC3SVUeRgY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Background image 1</a> by <a href="https://unsplash.com/@federize?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Federico Beccari</a>
-* <a href="https://unsplash.com/photos/dpKpRm5qSHM?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Background image 2</a> by <a href="https://unsplash.com/es/@alexandermils?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Alexander Mils</a>
-* <a href="https://unsplash.com/photos/ci9HzWTIVas?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Background image 3</a> by <a href="https://unsplash.com/@rawshot?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">John Finkelstein</a>
-* <a href="https://unsplash.com/photos/5hraEUlQwGk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Background image 4</a> by <a href="https://unsplash.com/@ratsk1?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Rat Ski</a>
-* <a href="https://unsplash.com/photos/zfjH8UXw5bo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Background image 5</a> by <a href="https://unsplash.com/@amitjagnade?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Amit Jagnade</a>
-* <a href="https://unsplash.com/wallpapers/nature/night-sky?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Background image 6</a> by <a href="https://unsplash.com/@nathananderson?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Nathan Anderson</a>
-<br/>
-
-* <a href="https://unsplash.com/photos/BW0vK-FA3eg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Multi Layer Perceptron project Image</a> by <a href="https://unsplash.com/@clintadair?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Clint Adair</a>
-* <a href="https://unsplash.com/photos/DuHKoV44prg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Portfolio project image</a> by <a href="https://unsplash.com/@ffstop?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Fotis Fotopoulos</a>
-  
-  
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
