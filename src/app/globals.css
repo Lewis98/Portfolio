@@ -1,0 +1,52 @@
+/* Tailwind base layers (keep at the top) */
+@import "tailwindcss";
+
+/* ---------- Global Theme ---------- */
+
+/* Set up custom CSS variables for easy tweaks later */
+:root {
+  --background: #0d1117;      /* Deep dark gray */
+  --foreground: #d1d5db;      /* Light gray text */
+  --accent: #00ff7f;  /* Neon green for highlights */
+}
+
+/* Apply base theme to the body */
+body {
+  @apply bg-[var(--background)] text-[var(--foreground)] font-mono;
+  font-feature-settings: "liga" 0; /* Disable font ligatures for a 'code' feel */
+}
+
+/* Link styles */
+.content a {
+  @apply text-[var(--accent)] transition-colors;
+}
+a:hover {
+  @apply text-green-400;
+}
+
+/* Give headings a terminal-like glow */
+h1, h2, h3, h4, h5, h6 {
+  @apply font-bold;
+  text-shadow: 0 0 10px rgba(0, 255, 127, 0.4);
+}
+
+/* Optional: a faint scanline texture across the whole site */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.03) 0,
+    rgba(255, 255, 255, 0.03) 1px,
+    transparent 2px
+  );
+}
+
+main {
+  @apply h-[calc(100vh-74px)]
+}
