@@ -2,7 +2,7 @@
 
 export default function HomePage() {
   return (
-    <main className="flex min-h-screen bg-[var(--background)] text-[var(--foreground)] font-mono">
+    <main className="flex">
       {/* Left column: glowing text */}
       <section className="w-1/3 flex flex-col justify-center px-12 z-10">
         <h1 className="text-5xl font-bold whitespace-nowrap mb-2">

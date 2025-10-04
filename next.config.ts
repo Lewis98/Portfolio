@@ -1,7 +1,8 @@
-import type { NextConfig } from "next";
+// next.config.js
+const isDev = process.env.NODE_ENV === "development";
 
-const nextConfig: NextConfig = {
-  /* config options here */
+const nextConfig = {
+  reactStrictMode: !isDev ? true : false,
 };
 
-export default nextConfig;
+module.exports = nextConfig;

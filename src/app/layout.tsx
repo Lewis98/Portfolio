@@ -5,7 +5,6 @@ import "./globals.css";
 /* Custom Components */
 import Navbar from "@/components/Navbar";
 
-
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -29,11 +28,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen`}
       >
+        {/* Navbar stays at top */}
         <Navbar />
-        {children}
-        
+
+        {/* Main content fills remaining space */}
+        <main className="flex-1" >
+          {children}
+        </main>
       </body>
     </html>
   );

@@ -46,3 +46,7 @@ body::before {
     transparent 2px
   );
 }
+
+main {
+  @apply h-[calc(100vh-74px)]
+}

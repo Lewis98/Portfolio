@@ -7,12 +7,11 @@ const navItems = [
   { name: "Projects", href: "/projects" },
   { name: "About", href: "/about" },
   { name: "Resume", href: "/resume" },
-  { name: "Contact", href: "/contact" },
 ];
 
 export default function Navbar() {
   return (
-    <nav className="bg-[var(--background)] shadow-md z-10">
+    <nav className="bg-[var(--background)] shadow-md">
       <ul className="flex justify-evenly items-center py-4">
         {navItems.map((item) => (
           <li key={item.href}>
