@@ -1,6 +1,5 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import { Gitgraph, templateExtend, TemplateName } from "@gitgraph/react";
 import { Commit, commits } from "@/data/about";
 

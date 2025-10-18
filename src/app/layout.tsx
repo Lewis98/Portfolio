@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-
+import NodeMapBackground from "@/components/NodeMapBackground";
 /* Custom Components */
 import Navbar from "@/components/Navbar";
 
@@ -30,6 +30,21 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen`}
       >
+
+      <div className="relative min-h-screen">
+        {/* Cosmetic node map background */}
+        <NodeMapBackground
+          className="absolute inset-0 -z-10"
+          interactive={false}     // no pointer interaction
+          speed={0.9}             // gentle drift
+          density={0.50}          // light touch (adjust 0.04–0.08)
+          maxConnectionDistance={120}
+          nodeColor="rgba(148,163,184,0.75)"  // slate-400-ish
+          lineColor="rgba(148,163,184,0.28)"
+          baseNodeRadius={1.1}
+        />
+
+
         {/* Navbar stays at top */}
         <Navbar />
 
@@ -37,6 +52,9 @@ export default function RootLayout({
         <main className="flex-1" >
           {children}
         </main>
+
+      </div>
+        
       </body>
     </html>
   );
